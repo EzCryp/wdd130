@@ -1,0 +1,34 @@
+/* maximum width, margin, border, padding, background color, and text color */
+.callout { 
+    width: 350px;
+    margin: 10px 20px 10px 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 15px;
+    background-color: #247;
+    color: white;
+} 
+
+/* position (float), margin, border, padding, background color, width, height */ 
+.callout img {
+    float: right;
+    margin: 0 0 10px 15px;
+    width: 100px;
+    height: auto;
+    border: 3px solid white;
+}
+
+/* margin */
+blockquote {
+    margin: 0;
+}
+
+/* display, top border dotted, top padding, text alignment, size of font */
+cite {
+    display: block;
+    border-top: 2px dotted white;
+    padding-top: 5px;
+    text-align: right;
+    font-size: 0.9em;
+    font-style: italic;
+    color: white;
+}

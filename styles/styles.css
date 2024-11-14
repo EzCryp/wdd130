@@ -8,7 +8,7 @@ nav {
 
 nav a {
     color: white;
-    display: block;
+    display: inline-block;
     padding: 20px;
 }
 
@@ -19,6 +19,7 @@ h1 {
 main img {
     width: 150px;
     height: auto;
+    float: right;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
@@ -40,6 +41,8 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+    border: 1px solid black;
+    box-shadow: 0 0 30px gray;
 }
 
 footer {

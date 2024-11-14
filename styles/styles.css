@@ -25,6 +25,15 @@ p {
     padding: 0;
 }
 
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,0.2); /*(red, green, blue, alpha)*/
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
 aside img {
     width: 200px;
     height: auto;

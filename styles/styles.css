@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+}
+
 main {
     max-width: 840px;
 }
@@ -24,24 +35,22 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid gray;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
-    padding: 0;
+    margin: 1rem;
+   
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0,0,0,0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    position: relative;
     text-align: center;
-    font: 0.8em sans-serif;
 }
 aside img {
     width: 200px;
@@ -50,12 +59,28 @@ aside img {
     box-shadow: 0 0 30px gray;
 }
 
+aside h2 {
+    position: absolute;
+    top: 99px;
+    left: 136px;
+}
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-    color: 898980; /* darkblue */
+    color: #898980; /* darkblue */
 }
 
+/* Style Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0 / 0.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color:#000;
+}
 
- /* colors:898980 darkblue  */
+.indent {
+    padding-left: 2rem;
+}

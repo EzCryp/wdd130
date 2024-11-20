@@ -1,29 +1,32 @@
-    * {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root {
+    --primary-color: #898980; /* dark grayish yellow */
+    --secondary-color: #A9B2AC; /* dark grayish cyan */
+    --accent1-color: #BCD0C7; /* grayish cyan - lime green */
+    --accent2-color: #DEF2C8; /* light grayish green */
+
+    --heading-font: 'Josefin Sans', serif;
+    --paragraph-font: 'Rethink Sans', serif;
+
+}
+
+* {
         margin: 0;
         padding: 0;
         border: 1px solid greenyellow;
         /* box-sizing: border-box; */
     }
 
-/*  font family: 'Josefin Sans', sans-serif; 
-    text-font: 'Rethink Sans', sans-serif; 
-    primary color: - Dark grayish yellow #898980 
-    secondary-color – Dark grayish cyan -lime green #A9B2AC
-    accent1-color – Grayish cyan - lime green #BCD0C7
-    accent2-color – Light grayish green #DEF2C8
-
-    coolor link : https://coolors.co/palette/898980-a9b2ac-bcd0c7-c5dac1-def2c8
-    
-    */
-
+/* HEADER */
 body {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--paragraph-font)
     /* font-size: 16px; */
 }
 
 header nav a {
     text-decoration: none;
-    color: #898980;
+    color: var(--primary-color);
 }
 
 .hero img {
@@ -33,10 +36,22 @@ header nav a {
     object-fit: cover;
 }
 
-.social-links {
-    padding: 1rem;
+/* FOOTER */
+
+.sociallinks {
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 10px;
 }
+
+.sociallinks img {
+    width: 10%;
+    padding: 8px;
+}
+
+
+
+
+

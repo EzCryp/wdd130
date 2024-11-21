@@ -1,116 +1,137 @@
+:root { /* pseudo-class selector */
+    --heading-primary-color: #898980; /* Dark grayish yellow  */
+    --heading-secondary-color: #A9B2AC; /* Dark grayish cyan -lime green  */
+    --heading-accent1-color: #BCD0C7 ; /* Grayish cyan - lime green  */
+    --heading-accent2-color: #DEF2C8; /* Light grayish green */
 
-:root {
-    --primary-color: #898980; /* dark grayish yellow */
-    --secondary-color: #A9B2AC; /* dark grayish cyan */
-    --accent1-color: #BCD0C7; /* grayish cyan - lime green */
-    --accent2-color: #DEF2C8; /* light grayish green */
-
-    --heading-font: 'Josefin Sans', serif;
-    --paragraph-font: 'Rethink Sans', serif;
-
+    --heading-font: 'Josephina Sans', 'Rethink Sans', sans-serif;
+    --padding: 1em;
+    --border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* General CSS */
+/* general styles */
 * {
     margin: 0;
-    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 body {
-    max-width: 100%;
-    margin: 0 auto;
-    background-color: var(--accent2-color);
-}
-h1, h2 {
-    font-family: var(--heading-font); 
-    padding: 0.5em;
-    color: var(--primary-color);
-}
-
-p {
-    font-family: var(--paragraph-font);
-    color: var(--secondary-color);
-    padding: 0.5em;
-}
-
-/* HEADER CSS */
-header nav a {
-    text-decoration: none;
-    color: var(--primary-color);
-    display: inline-flex;
-    margin: 0;
-    padding: 0.5em;
-  
-   
-
-   
-
-}
-
-.hero h1 {
-    display: flex;
-    justify-content: center;
-    margin: 0;
+    font-family: var(--heading-font);
+    font-size: 16px;
     
 }
 
+/* header */
+header {
+    background-color: var(--heading-accent2-color);
+    padding: 10px;
+}
 
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: nav(--padding);
+    border: nav(--border);
+}
+
+/* main */
 .hero img {
-    display: relative;
+    /* display: relative; */
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.heroarticle img {
-    display: inline-flex;
-    padding: 0.2em;
-    background-color: var(--accent1-color);
-    width: 30%;
-    height: auto;
-    margin: 0.5em;
-  
-    
+.hero h1 {
+    color: var(--heading-primary-color);
+    padding: 1em;
+    border: nav(--border);
+    background-color: var(--heading-accent1-color);
+    width: 100%;
+    display: block;
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: auto;
+    /* float: center; */
+    position: absolute;
+    top: 15%;
+    opacity: 0.8;
+ 
 }
 
-.hero-container {
-    max-width: 100%;
-    position: relative;
+.heroarticle {
+    position: absolute;
+    padding: 220px;
+    top: 45%;
+    left: 10%;
+    right: 10%;
+    box-shadow: 0 0 40px gray;
+   
+}
+
+.heroarticle p {
+    padding: 2.5em;
+    border: nav(--border);
+    float: left;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    right: 35%;
+    text-align: left;
+    font-weight: 100%;
+    color: black;
+    opacity: 0.9;
     box-shadow: 0 0 30px gray;
-    background-size: cover;
-    background-position: center;
-    padding: 0px;
-    margin: 0px;
-    height: 640px;
+}
+
+.heroarticle img {
+    width: 20%;
+    height: auto;
+    float: right;
+    position: absolute;
+    top: 30%;
+    right: 10%; 
+    background-color: var(--heading-secondary-color);
+    padding: 0.2em;
+    box-shadow: 0 0 20px #DEF2C8;
+}
+
+p {
+    text-align: center;
+}
+
+/* section */
+section {
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+section h2 {
+    color: var(--heading-primary-color);
+    background-color: var(--heading-accent1-color);
+    padding: nav(--padding);
+    margin: 0.5em;
+    text-align: center;
 }
 
 section img {
-    display: flex;
-    align-items: center;
     padding: 0.2em;
-    margin: 0.5em;
-    width: 30%;
-    background-color: var(--accent1-color);
+    margin: 0.2em;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--heading-secondary-color);
 }
-    
 
-/* FOOTER CSS */    
-
+/* footer */
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 1em;
-    background-color: var(--accent1-color);
-    color: white;
+    background-color: var(--heading-accent2-color);
+    padding: 0.5em;
 }
 
 .sociallinks img {
-    width: 2%;
+    width: 20px;
     height: auto;
-
 }
-
-

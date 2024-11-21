@@ -1,11 +1,20 @@
+:root {
+    --heading-background-color: darkblue;
+    --heading-text-color: darkblue;
+    --heading-font: 'Roboto', 'Arial', sans-serif;
+    --padding: 1em;
+    --border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
 * {
     margin: 0;
-    padding: 0;
+    padding: nav(--padding);
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    font-family: var(--heading-font);
     font-size: 16px;
 }
 
@@ -19,6 +28,7 @@ nav {
 }
 
 nav a {
+    text-decoration: none;
     color: white;
     display: inline-block;
     padding: 20px;
@@ -34,7 +44,7 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid gray;
+    border: nav(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
@@ -55,7 +65,7 @@ aside {
 aside img {
     width: 200px;
     height: auto;
-    border: 1px solid rgba(0,0,0,0.2);
+    border: nav(--border);
     box-shadow: 0 0 30px gray;
 }
 

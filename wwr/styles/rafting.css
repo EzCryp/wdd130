@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 
 :root {
     --primary-color: #898980; /* dark grayish yellow */
@@ -11,37 +10,51 @@
 
 }
 
+/* General CSS */
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid greenyellow; */
 }
 
-/* HEADER */
-
-
-
-header nav a {
-    text-decoration: none;
-    color: var(--primary-color);
-    display: grid;
-    grid-template-columns: 20% 55% 25%;
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: var(--accent2-color);
 }
-
 h1, h2 {
     font-family: var(--heading-font); 
+    padding: 0.5em;
     color: var(--primary-color);
 }
 
 p {
     font-family: var(--paragraph-font);
     color: var(--secondary-color);
+    padding: 0.5em;
 }
+
+/* HEADER CSS */
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-flex;
+    margin: 0;
+    padding: 0.5em;
+  
+   
+
+   
+
+}
+
 .hero h1 {
     display: flex;
     justify-content: center;
     margin: 0;
+    
 }
+
+
 .hero img {
     display: relative;
     width: 100%;
@@ -49,14 +62,15 @@ p {
     object-fit: cover;
 }
 
-
 .heroarticle img {
-    display: flex;
-    /* float image */
-    width: 50%;
-    align-items: center;
-  
+    display: inline-flex;
+    padding: 0.2em;
+    background-color: var(--accent1-color);
+    width: 30%;
     height: auto;
+    margin: 0.5em;
+  
+    
 }
 
 .hero-container {
@@ -68,24 +82,35 @@ p {
     padding: 0px;
     margin: 0px;
     height: 640px;
-    /* border: 1px solid red; */
 }
 
-    /* border: 1px solid red; */
-
-/* FOOTER */    
-
-
-.sociallinks nav {
+section img {
     display: flex;
-    justify-content: flex-end;
-  
+    align-items: center;
+    padding: 0.2em;
+    margin: 0.5em;
+    width: 30%;
+    background-color: var(--accent1-color);
+}
+    
+
+/* FOOTER CSS */    
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 1em;
+    background-color: var(--accent1-color);
+    color: white;
 }
 
 .sociallinks img {
     width: 2%;
     height: auto;
-    /* padding: 2; */
+
 }
 
 

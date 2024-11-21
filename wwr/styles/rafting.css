@@ -31,8 +31,7 @@ header {
 header nav a {
     text-decoration: none;
     color: var(--primary-color);
-    padding: nav(--padding);
-    border: nav(--border);
+    padding: 20px;
 }
 
 /* main */
@@ -46,7 +45,6 @@ header nav a {
 .hero h1 {
     color: var(--heading-primary-color);
     padding: 1em;
-    border: nav(--border);
     background-color: var(--heading-accent1-color);
     width: 100%;
     display: block;
@@ -72,14 +70,13 @@ header nav a {
 
 .heroarticle p {
     padding: 2.5em;
-    border: nav(--border);
     float: left;
     position: absolute;
     top: 40%;
     left: 10%;
     right: 35%;
     text-align: left;
-    font-weight: 100%;
+    font-weight: bold;
     color: black;
     opacity: 0.9;
     box-shadow: 0 0 30px gray;

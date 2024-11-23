@@ -9,7 +9,6 @@
 
 * {
     margin: 0;
-    padding: nav(--padding);
     box-sizing: border-box;
 }
 
@@ -44,7 +43,6 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    border: nav(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
@@ -65,7 +63,6 @@ aside {
 aside img {
     width: 200px;
     height: auto;
-    border: nav(--border);
     box-shadow: 0 0 30px gray;
 }
 

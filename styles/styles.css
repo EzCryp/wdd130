@@ -3,18 +3,20 @@
     --heading-text-color: darkblue;
     --heading-font: 'Roboto', 'Arial', sans-serif;
     --padding: 1em;
-    --border: 1px solid rgba(0, 0, 0, 0.2);
+    --border-radius: 10px; 
 }
 
 
 * {
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 body {
     font-family: var(--heading-font);
     font-size: 16px;
+    height: 100vh;
+
 }
 
 main {
@@ -47,6 +49,7 @@ main img {
     box-shadow: 0 0 30px gray;
     float: right;
     margin: 0 0 1rem 1rem;
+    border-radius: 10px;
 }
 
 p {
@@ -54,16 +57,22 @@ p {
    
 }
 
+
+
 /* Aside CSS */
 aside {
-    width: 20rem;
+    width: 20em;
     position: relative;
     text-align: center;
+    border-radius: 10px;
 }
 aside img {
     width: 200px;
     height: auto;
+    padding: 2px;
     box-shadow: 0 0 30px gray;
+    margin: 0 0 1rem 1rem;
+    border-radius: 10px;
 }
 
 aside h2 {
@@ -72,12 +81,19 @@ aside h2 {
     left: 136px;
 }
 
+aside p {
+    margin: 1rem;
+    font-size: 0.8rem;
+}
+
 /* Footer CSS */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-    color: #898980; /* darkblue */
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
 }
 
 /* Class Selectors */
@@ -85,10 +101,11 @@ footer {
     margin: 1rem;
     border: 1px solid rgba(0,0,0 / 0.1);
     padding: 1rem;
-    background-color: #ddd;
+    background-color: #ddda;
     color:#000;
 }
 
 .indent {
     padding-left: 2rem;
+    border-radius: 10px;
 }

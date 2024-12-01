@@ -17,8 +17,8 @@
     <body>
 
     <header>
-        <img src="images/wwr.png" alt="logo" width="75"  height="75">
-        <nav>
+        <img id="logo" src="images/wwr.png" alt="logo">
+        <nav class="nav-links">
             <a href="index.html" target="_blank">Home</a>
             <a href="about.html" target="_blank">About</a>
             <a href="trips.html" target="_blank">Trips</a>
@@ -27,8 +27,8 @@
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/hero.jpg" alt="rafting">
+        <div id="hero" class="hero-box">
+            <img src="images/hero2.jpg" alt="rafting">
             <h1>White Water Rafting</h1>
             <article class="heroarticle">
                 <img src="images/happyemployee.JPG" alt="happy employees">
@@ -36,29 +36,44 @@
              </article>
         </div>
 
-        <section>
+        <!-- Some attempt was made to create content for the History and Adventure sections of the page. -->
+        <div id="history" class="history-box">
             <h2>History</h2>
             <p>White water rafting has been around for centuries, with evidence of people using rafts to navigate rivers dating back to ancient times. </p>
-        </section>
+            <p>Today, white water rafting is a popular recreational activity that is enjoyed by people of all ages. Whether you are looking for a thrilling adventure or a relaxing day on the water, white water rafting has something to offer everyone.</p>
+        </div>
 
-        <section>
+        <div id="adventure" class="adventure-box">
             <h2>Adventure Awaits You</h2>
-            <img src="images/happy1.JPG" alt="happy rafters1">
-            <img src="images/happy2.JPG" alt="happy rafters2">
-            <img src="images/in-action1.JPG" alt="rafting in-action1">
-            <img src="images/in-action2.JPG" alt="rafting in-action2">
-            <img src="images/in-action3.JPG" alt="rafting in-action3">
-        </section>
+            <img src="images/happy1.JPG" alt="happy rafters1 photo">
+            <img src="images/happy2.JPG" alt="happy rafters2 photo">
+            <img src="images/in-action1.JPG" alt="rafting in-action1 photo">
+            <img src="images/in-action2.JPG" alt="rafting in-action2 photo">
+            <img src="images/in-action3.JPG" alt="rafting in-action3 photo">
+        </div>
     </main>
 
     <footer>
-        <nav id="logo" class="sociallinks"> 
-            <p> &copy;2024 | Ezra Vincent Zacarias | PHL 🇵🇭 </p>
-            <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
-            <a href="https://www.twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
-            <a href="https://www.instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
-        </nav>
+        <div class="footer-box">
+            <section id="info">
+                <p> &copy;2024 | Ezra Vincent Zacarias | PHL 🇵🇭 </p>
+            </section>
+            <nav class="social-icons">
+                <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+                <a href="https://www.instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+            </nav>
+        </div>
     </footer>
 
     </body>
 </html>
+
+<!--  Week 04 Rubric:
+1. No errors found in the report.
+2. The header uses CSS Grid layout and is uniform in design.
+3. The nav uses CSS Flex to create the horizontal layout.
+4. Some attempt was made to create content for the History and Adventure sections of the page.
+5. Social media icons are styled to the right in the footer and are horizontal to each other.
+6. The page is styled and laid out to match the given wireframe example with uniform alignment, repetition, and proximity of content.
+7. There are no color contrast errors at the AA level as measured by CSS Overview in Dev Tools. -->

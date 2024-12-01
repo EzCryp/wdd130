@@ -84,7 +84,7 @@ nav a:hover {
 .hero-box h1 {
     color: var(--heading-primary-color);
     padding: 20px;
-    background-color: var(--heading-accent2-color);
+    background-color: var(--heading-accent1-color);
     width: 100%;
     display: block;
     margin-top: 3%;
@@ -182,7 +182,7 @@ footer p {
     align-self: center;
     justify-self: end;
     font-size: 0.8em;
-    padding: 0.5em;
+    padding: 1.5em;
 }
 
 .social-icons img {

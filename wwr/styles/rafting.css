@@ -40,7 +40,7 @@ h2 {
 /* HEADER */
 /* 2. The header uses CSS Grid layout and is uniform in design. */
 header {
-    /* background-color: var(--heading-accent2-color); */
+    background-color: var(--heading-accent2-color);
     display: grid; 
     grid-template-columns: 20% 60% 20%;
     color: var(--heading-primary-color);
@@ -119,6 +119,7 @@ nav a:hover {
     font-size: x-large;
     color: var(--heading-primary-color);
     opacity: 0.9;
+   text-shadow: white 2px 1px 1px;
 }
 
 .hero-article img {

@@ -12,7 +12,7 @@
     --nav-hover-link-color: ;
     --nav-hover-background-color: ;
 }
-
+/* REVIEW EACH ATTRIBUTES */
 /*******************************************************
 *
 *  Rules for classes used on all pages
@@ -33,12 +33,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    text-align: center;
+    /* text-align: center; */
     padding: 0.5em;
 }
 
 h1 {
     color: var(--secondary-color);
+    text-align: center;
 }
 
 h2 {
@@ -123,7 +124,9 @@ footer p {
 *
 *              Homepage only CSS
 *    Only rules that are used on the homepage only
-*    
+*    The Home page contains a hero image with heading, 
+*    a newsletter, call to action, uses CSS Grid as assigned, 
+*       and contains the required content.
 *******************************************************/
 .hero-container {
     max-width: 100%;
@@ -154,6 +157,7 @@ footer p {
 }
 .hero-container h1{
     position: absolute;
+    top: 15%;
 }
 
 
@@ -253,15 +257,14 @@ footer p {
     /* Call to Action */
 .call-to-action {
     text-decoration: none;
-    background-color: var(--accent1-color);
+    /* background-color: var(--accent1-color);
     color: #fff;
-    padding: 1rem;
+    /* padding: 1rem; 
     text-align: center;
     border: 5px solid #a9a9a982;
     border-radius: 20px;
-    box-shadow: 2 0 10px gray;
-    left: 50%;
-}
+    left: 50%; */
+} 
 
 .call-to-action h2 {
     margin-bottom: 2rem;
@@ -302,11 +305,6 @@ footer p {
     padding: 8px 5rem;
     text-decoration: none;
 } */
-
-
-
-
-
 
 .newsletter {
     border: 2px red dotted;
@@ -389,18 +387,18 @@ footer p {
 }
 
 .hero-article p {
-    padding: 3em;
+    padding: 1em;
     float: left;
     position: absolute;
-    top: 15%;
-    left: 2%;
+    top: 22%;
+    left: 5%;
     right: 40%;
     text-align: left;
     font-weight: bold;
     font-size: x-large;
     color: var(--primary-color);
     opacity: 0.9;
-   text-shadow: white 2px 1px 1px;
+    text-shadow: white 2px 1px 1px;
 }
 
 .hero-article img {
@@ -418,9 +416,14 @@ footer p {
 .history-box, .adventure-box {
     margin: 1em;
     padding: 1em;
+    /* text-align: center; */
 }
 
+.history-box h2 {
+    text-align: center;
+}
 
+/* align to center all images in adventure-box */
 .adventure-box {
     display: grid;
     align-self: center;
@@ -430,14 +433,15 @@ footer p {
 
 .adventure-box h2 {
     grid-column: 1/-1;
+    text-align: center;
 }
 .adventure-box img {
     background-color: var(--accent2-color);
     box-shadow: 0 0 30px #413939;
     padding: 0.2em;
     width: 75%;
-    align-items: center;
-
+    /* align-items: center; */
+ 
     border-top-left-radius: 4px;
     border-top-right-radius: 40px;
     border-bottom-left-radius: 40px;
@@ -488,27 +492,56 @@ figcaption {
     border-bottom-right-radius: 4px; 
 }
 
+/* Package Details */
 .packages {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-gap: 1rem; */
     padding: 1rem;
     margin: 1rem;
-    border: 1px rgba(9, 9, 9, 0.294) solid;
-    border-radius: 0.5rem;
-
+    /* border: 1px rgba(9, 9, 9, 0.294) solid; */
+    /* border-radius: 20px; */
+    width: 100%;
 }
 
 .packages img {
     width: 100%;
-    height: auto;
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0 0 30px gray;
     padding: .5rem;
     margin: 10px;
 }
 
+table, tr, th, td {
+    border: 2px solid var(--primary-color);
+    border-collapse: collapse;
+    padding: 2em;
+    margin: 1em;
+    text-align: center;
+    /* border-radius: 10px; */
+}
+/* thread with background color accent 2 */
+thead {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+/* center the h2 class="package" */
+.package {
+    text-align: center;
+    padding: 1rem;
+    color: var(--primary-color);
+}
 
+#contact {
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #a9a9a982;
+    border-radius: 50px;
+    box-shadow: 2 0 10px gray;
+    background-color: var(--accent1-color);
+}
 /*******************************************************
 *
 *              Rules for Contact Us page
@@ -519,31 +552,50 @@ figcaption {
 
 /* h1.contact{} */
 /* section .office_info{} */
+.office-map{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%; 
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px rgba(9, 9, 9, 0.294) solid;
+    border-radius: 0.5rem;
+}
+
+.contact-info {
+    display: grid;
+    border: 1px solid yellowgreen;
+    grid-template: 1fr;
+}
     /* h2.office {} */
 .contactus {
     display: grid;
     padding: 2rem;
 }
 
-.contact h1 {
+.contactus h1 {
     color: var(--primary-color);
     padding: 1rem;
 }
 
-.contact p {
+.contact-info p {
     padding: 0;
-    font-size: larger;
-    color: #000;
+    /* font-size: larger; */
+    color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
 }
 
+/* make map wide */
 .map {
-    padding: 2rem;
-    float: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    /* float: center; */
+    width: 100%;
 }
 
-.text-center {
-    text-align: center;
-}
+
 
 /* section .form{} */
     /* .form-item{} */
@@ -565,6 +617,7 @@ figcaption {
 label{
     display: inline-block;
     margin-bottom: 0.5em;
+   
 }
 
 
@@ -626,7 +679,10 @@ button:hover{
 }
 
 .employees h2 {
-    grid-column: 1/-1;
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+    padding: 1rem;
+    text-decoration: none;
 }   
 .employees img {
     justify-content: space-between;

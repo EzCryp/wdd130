@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This is a project for WDD 130: White Water Rafting Website Contact Us Page">
+        <meta name="description" content="This is a project for WDD 130 Fall 2024: White Water Rafting Website Contact Us Page by Ezra Vincent Zacarias">
         <meta name="author" content="Ezra Vincent Zacarias">
         <link rel="stylesheet" href="styles/rafting.css">
         <title>White Water Rafting | Contact Us</title>
@@ -16,15 +16,94 @@
     <header>
         <img id="logo" src="images/wwr.png" alt="logo">
         <nav class="nav-links">
-            <a href="index.html" target="_blank">Home</a>
-            <a href="about.html" target="_blank">About</a>
-            <a href="trips.html" target="_blank">Trips</a>
-            <a href="contact.html" target="_blank">Contact Us</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
-       
+
+        <h1 class="contact">Contact Us</h1>
+
+        <section class="office_info">
+          <h2 class="office">Our Office</h2>
+
+          <div id="contact" class="info">
+              <h3>Address</h3>
+              <p>Cagayan de Oro, 9000 Misamis Oriental, Philippines</p>
+              <h3>Telephone</h3>
+              <p>(+63) 961 6825927</p>
+              <h3>Email</h3>
+              <p>customercare@wwra.com</p>
+          </div>
+
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31583.809692815204!2d124.57102945953838!3d8.3051624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ff86757a34a90d%3A0x91d3c6b38fa98df2!2sCDO%20White%20Water%20Rafting!5e0!3m2!1sen!2sph!4v1712725221970!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
+        
+        <section class="form">
+          <form class="contact-form">
+              <!-- Question 1 -->
+              <div class="form-item">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname"> 
+              </div>
+
+               <!-- Question 2 --> 
+              <div class="form-item">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"> 
+              </div>
+
+              <!-- Question 3 -->
+              <div class="form-item">
+                <label for="q3">Type of Inquiry</label>
+                <select name="q3" id="q3">
+                  <option value="" selected disabled>Choose One ...</option>
+                  <option value="General Inquiry">General Inquiry#</option>
+                  <option value="Reservation Question">Reservation Question</option>
+                  <option value="Website Suggestion">Website Suggestion</option>
+                </select>
+              </div>
+              
+              <!-- Question 4 -->
+              <div class="form-item">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Type your message here"></textarea>
+              </div>
+  
+              <div class="form-item">
+                <input type="checkbox" id="subscription" name="subscription">
+                <label for="subscription">Subscribe me to the monthly newsletter</label>
+              </div>
+  
+              <button type="submit">Send Message</button>
+          
+          </form> 
+        </section>
+
+        <section class="employees">
+            <div class = "OurTeam">
+              <h2>Meet Our Team</h2>
+            </div>
+            <figure>
+                <img src="../wwr/images/jane-orienter.JPG" alt="orienter">
+                <figcaption>Meet Jane, she is the one assigned in the orientation.</figcaption>
+            </figure>
+            <figure>
+                <img src="../wwr/images/jake-rafterguide.JPG" alt="rafter guide">
+                <figcaption>This is Jake, his team are the one that will accompany you in the rapids.</figcaption>
+            </figure>
+            <figure>
+                <img src="../wwr/images/mike-safetyofficer.JPG" alt="safety officer">
+                <figcaption>This is Mike, he supervised and monitor the safety of each adventure.</figcaption>
+            </figure>
+        </section>
+
+
     </main>
 
     <footer>
@@ -34,18 +113,9 @@
             <a href="https://www.twitter.com" target="_blank"><img src="images/twitter1.svg" alt="Twitter"></a>
             <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
             <!-- added wireframe link and icon -->
-            <a href="https://www.linkedin.com" target="_blank"><img src="images/wireframe-link.png" alt="wireframe"></a> 
+            <a href="https://app.moqups.com/wYWstQSh3aWdis12su316mtB79QVoF9w/view/page/afe3e3ebd" target="_blank"><img src="images/wireframe-link.png" alt="wireframe"></a> 
         </nav>
     </footer>
 
     </body>
 </html>
-
-<!--  Week 04 Rubric:
-1. No errors found in the report.
-2. The header uses CSS Grid layout and is uniform in design.
-3. The nav uses CSS Flex to create the horizontal layout.
-4. Some attempt was made to create content for the History and Adventure sections of the page.
-5. Social media icons are styled to the right in the footer and are horizontal to each other.
-6. The page is styled and laid out to match the given wireframe example with uniform alignment, repetition, and proximity of content.
-7. There are no color contrast errors at the AA level as measured by CSS Overview in Dev Tools. -->

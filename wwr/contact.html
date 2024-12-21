@@ -48,40 +48,40 @@
         <section class="form">
           <form class="contact-form">
               <!-- Question 1 -->
-              <div class="form-item">
+              <fieldset class="form-item">
                 <label for="fullname">Full Name</label>
                 <input type="text" id="fullname" name="fullname"> 
-              </div>
+              </fieldset>
 
                <!-- Question 2 --> 
-              <div class="form-item">
+              <fieldset class="form-item">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email"> 
-              </div>
+              </fieldset>
 
               <!-- Question 3 -->
-              <div class="form-item">
-                <label for="q3">Type of Inquiry:</label>
+              <fieldset class="form-item">
+                <legend>Type of Inquiry:</legend>
 
                 <input type="radio" id="geninq" name="q3" value="General Inquiry">
                 <label for="q3">General Inquiry</label>
-                <input type="radio" id="revqst" name="q3" value="Reservation Question"> 
+                <input type="radio" id="revqst" name="q3" value="Reservation Question">
                 <label for="q3">Reservation Question</label>
-                <input type="radio" id="websug" name="q3" value="Website Suggestion">  
+                <input type="radio" id="websug" name="q3" value="Website Suggestion">
                 <label for="q3">Website Suggestion</label>
-
-              </div>
+              </fieldset>
+                
               
               <!-- Question 4 -->
-              <div class="form-item">
+              <fieldset class="form-item">
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="6" placeholder="Type your message here"></textarea>
-              </div>
+              </fieldset>
   
-              <div class="form-item">
+              <fieldset class="form-item">
                 <input type="checkbox" id="subscription" name="subscription">
                 <label for="subscription">Subscribe me to the monthly newsletter</label>
-              </div>
+              </fieldset>
   
               <button type="submit">Send Message</button>
           
